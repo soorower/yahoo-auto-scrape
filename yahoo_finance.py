@@ -407,10 +407,10 @@ for symbol in symbols:
     CMP = symbol
     print(CMP)
     url1 = "https://uk.finance.yahoo.com/quote/" + CMP + "/profile?p=" + CMP
-    page1 = requests.get(url1, headers=headers, timeout= 10).content
+    page1 = requests.get(url1, headers=headers).content
     res1.append(page1)
     url2 = "https://uk.finance.yahoo.com/quote/" + CMP + "/key-statistics?p=" + CMP
-    page2 = requests.get(url2, headers=headers, timeout = 10).content
+    page2 = requests.get(url2, headers=headers).content
     res2.append(page2)
 
 print('Almost Done!')
