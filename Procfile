@@ -1,0 +1,1 @@
+worker: python yahoo_finance.py
